@@ -1,5 +1,4 @@
 import "./index.css"
-import { Link, NavLink } from "react-router-dom"
 import Facebook from "../../Assets/facebook.png"
 import Instagram from "../../Assets/instagram.png"
 import Twitter from "../../Assets/twitter.png"
@@ -11,54 +10,6 @@ const Contact = ()=> {
     return(
 
         <>
-            <header>
-        <nav className="navbar">
-            <div className="company-name">
-                <Link to="/">FreshMind</Link>
-            </div>
-            <ul className="navigation">
-                <li><NavLink exact="true" activeclassname="active" to="/">Home</NavLink></li>
-                <li><NavLink 
-            exact="true" 
-            activeclassname="active"
-            to="/online-res"
-            >Online Resources</NavLink></li>
-                <li><NavLink 
-            exact="true" 
-            activeclassname="active"
-            to="/book-session"
-            >Book A Session</NavLink></li>
-                <li><NavLink 
-            exact="true" 
-            activeclassname="active"
-            to="/contact"
-            >Contact Us</NavLink></li>
-                <li><NavLink 
-            exact="true" 
-            activeclassname="active"
-            to="/feedback"
-            >Feedback</NavLink></li>
-            
-            </ul>
-
-
-            <div className="auth-buttons">
-                <NavLink 
-                exact="true" 
-                activeclassname="active"
-                className="signup-button"
-                to="/sign-up"
-                >Sign Up</NavLink>
-
-                <NavLink 
-                exact="true" 
-                activeclassname="active"
-                className="login-button"
-                to="/login"
-                >Login</NavLink>
-            </div>
-        </nav>
-    </header>
     <div className="contact-content">
         <h1>Contact Us</h1>
         <p>If you have any questions or need support, feel free to contact us. We are here to help you on your journey to better mental well-being. Reach out to us through the following channels:</p>

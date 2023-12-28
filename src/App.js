@@ -10,12 +10,13 @@ import Login from './Components/Login';
 import SelfAsses from './Components/Self Assessment';
 import Courses from './Components/Courses';
 import RefMaterials from './Components/Reference Materials';
+import Layout from './Components/Layout';
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/">
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path="online-res" element={<OnlineRes />} />
           <Route path="self-asses" element={<SelfAsses />} />
